@@ -1,35 +1,35 @@
-TÛpicos fundamentais para entender o funcionamento do GIT
+# T√≥picos fundamentais para entender o funcionamento do GIT
 
 SHA1 - Secure Hash Algorithm (Algoritmo de Hash Seguro)
-… a seguranÁa, um algorÌtimo de encriptaÁ„o.
-A encriptaÁ„o gera um conjunto de caracteres identificador de 40 dÌgitos.
-A cada mudanÁa dentro do arquivo, È gerado um novo conjunto de caracteres.
-E se voltarmos o arquivo pra ficar do mesmo jeito como j· foi uma vez (J· tendo gerado os 4o caracteres) o conjunto ser· o mesmo que j· foi. 
+√â a seguran√ßa, um algor√≠timo de encripta√ß√£o.
+A encripta√ß√£o gera um conjunto de caracteres identificador de 40 d√≠gitos.
+A cada mudan√ßa dentro do arquivo, √© gerado um novo conjunto de caracteres.
+E se voltarmos o arquivo pra ficar do mesmo jeito como j√° foi uma vez (J√° tendo gerado os 4o caracteres) o conjunto ser√° o mesmo que j√° foi. 
 
-BLOBS ñ Objeto/arquivo com metadados que contÈm o sha1 de um arquivo, ficam guardados no GIT
-Blob 9  \0  Ol· mundo
+BLOBS ‚Äì Objeto/arquivo com metadados que cont√©m o sha1 de um arquivo, ficam guardados no GIT
+Blob 9  \0  Ol√° mundo
 
-TREES ñ Um conjunto de BLOBS (e na tree se guarda o nome do arquivo, diferente da blob)
+TREES ‚Äì Um conjunto de BLOBS (e na tree se guarda o nome do arquivo, diferente da blob)
 Tree  \0  blob  sa4d8s  texto.txt
-Uma tree/ ·rvore,  diretÛrios, podem conter outras ·rvore, diretÛrios.	
-A tree tambÈm sempre gera um Sha1. (e se algo dentro dessa ·rvore for mudado, o sha1 ser· mudado tambÈm)
-Uma tree contÈm outras trees e blobs.
+Uma tree/ √°rvore,  diret√≥rios, podem conter outras √°rvore, diret√≥rios.	
+A tree tamb√©m sempre gera um Sha1. (e se algo dentro dessa √°rvore for mudado, o sha1 ser√° mudado tamb√©m)
+Uma tree cont√©m outras trees e blobs.
 
-COMMITS ñ O que junta tudo, aponta pra uma ·rvore, pra um parente (outro comit) e tambÈm para o autor, e mensagem.
+COMMITS ‚Äì O que junta tudo, aponta pra uma √°rvore, pra um parente (outro comit) e tamb√©m para o autor, e mensagem.
 tree  sha1
 parente  sha1
 Autor  Carlos
-mensagem  ìinicia..î
-timestamp (o hor·rio que foi criado)
-O commit tambÈm gera um sha1
-Qualquer coisa que for alterada dentro dessa commit, ir„o alterar os metadados, os sha1. Commit È o mais seguro para proteger seus arquivos, n„o tem como alguÈm alterar sem que vc saiba.
+mensagem  ‚Äúinicia..‚Äù
+timestamp (o hor√°rio que foi criado)
+O commit tamb√©m gera um sha1
+Qualquer coisa que for alterada dentro dessa commit, ir√£o alterar os metadados, os sha1. Commit √© o mais seguro para proteger seus arquivos, n√£o tem como algu√©m alterar sem que vc saiba.
 
-Chave SSH ñ Uma forma de se estabelecer uma conex„o segura e encriptada entre duas m·quinas.
-(exemplo:  servidor do Github e nossa m·quina)
-Um pa de chaves que deve ser criada usando o GitBash, pra assim alimentar o GitHub com ela e assim linkar com as informaÁıes que est„o no GitHub.
+Chave SSH ‚Äì Uma forma de se estabelecer uma conex√£o segura e encriptada entre duas m√°quinas.
+(exemplo:  servidor do Github e nossa m√°quina)
+Um pa de chaves que deve ser criada usando o GitBash, pra assim alimentar o GitHub com ela e assim linkar com as informa√ß√µes que est√£o no GitHub.
 
-Token ñ Token de acesso pessoal
-… gerado um token, que vocÍ precisar· guardar pois sempre ser· usado, pra colocar no ligar da senha quando for pedido no Git, quando for clonar um repositÛrio do GitHub.
+Token ‚Äì Token de acesso pessoal
+√â gerado um token, que voc√™ precisar√° guardar pois sempre ser√° usado, pra colocar no ligar da senha quando for pedido no Git, quando for clonar um reposit√≥rio do GitHub.
 
 Git Bash -
-… um terminal extendido para otimizar o uso do Git.
+√â um terminal extendido para otimizar o uso do Git.
