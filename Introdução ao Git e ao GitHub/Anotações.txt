@@ -1,0 +1,35 @@
+Tópicos fundamentais para entender o funcionamento do GIT
+
+SHA1 - Secure Hash Algorithm (Algoritmo de Hash Seguro)
+É a segurança, um algorítimo de encriptação.
+A encriptação gera um conjunto de caracteres identificador de 40 dígitos.
+A cada mudança dentro do arquivo, é gerado um novo conjunto de caracteres.
+E se voltarmos o arquivo pra ficar do mesmo jeito como já foi uma vez (Já tendo gerado os 4o caracteres) o conjunto será o mesmo que já foi. 
+
+BLOBS – Objeto/arquivo com metadados que contém o sha1 de um arquivo, ficam guardados no GIT
+Blob 9  \0  Olá mundo
+
+TREES – Um conjunto de BLOBS (e na tree se guarda o nome do arquivo, diferente da blob)
+Tree  \0  blob  sa4d8s  texto.txt
+Uma tree/ árvore,  diretórios, podem conter outras árvore, diretórios.	
+A tree também sempre gera um Sha1. (e se algo dentro dessa árvore for mudado, o sha1 será mudado também)
+Uma tree contém outras trees e blobs.
+
+COMMITS – O que junta tudo, aponta pra uma árvore, pra um parente (outro comit) e também para o autor, e mensagem.
+tree  sha1
+parente  sha1
+Autor  Carlos
+mensagem  “inicia..”
+timestamp (o horário que foi criado)
+O commit também gera um sha1
+Qualquer coisa que for alterada dentro dessa commit, irão alterar os metadados, os sha1. Commit é o mais seguro para proteger seus arquivos, não tem como alguém alterar sem que vc saiba.
+
+Chave SSH – Uma forma de se estabelecer uma conexão segura e encriptada entre duas máquinas.
+(exemplo:  servidor do Github e nossa máquina)
+Um pa de chaves que deve ser criada usando o GitBash, pra assim alimentar o GitHub com ela e assim linkar com as informações que estão no GitHub.
+
+Token – Token de acesso pessoal
+É gerado um token, que você precisará guardar pois sempre será usado, pra colocar no ligar da senha quando for pedido no Git, quando for clonar um repositório do GitHub.
+
+Git Bash -
+É um terminal extendido para otimizar o uso do Git.
