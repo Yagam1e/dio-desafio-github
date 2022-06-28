@@ -1,0 +1,69 @@
+Comandos no Git:
+
+[Dentro de uma pasta / diretório em que você quer criar as pastas
+se pode usar com o botão direito e abrir o git bash[
+
+mkdir "nome da pasta" = criar uma pasta/diretório
+
+git init = iniciar um repositório vazio dentro de tal pasta
+para poder usar o versionamento
+
+git config --list = traz uma lista das configurações do seu git
+e se o usuário está de acordo com o qual quer usar
+
+git config --global --unset user.email = alterar o email do usuário 
+
+git config --global --unset user.name = alterar o usuário
+
+git config --global user.email "email que deseja usar, o que cadastrou no github"
+
+git config --global user.name = "nickname que vc usou no github"
+
+git clone = baixar no git, algum repositório do github (para trabalhar nele etc)
+
+ls = listar
+
+ls -a = listar repositórios ocultos
+se aparecer a pasta -git/, é sinal de que é um repositório.
+
+git remote -v = mostra os repositórios remotos na qual o repositório 
+que você baixou, está apontado
+
+git status = mostra o status do seu diretório e se tem algum arquivo 
+para ser comitado. Se está no main, etc
+
+clear ou cntr+l = limpar
+
+tab = serve como atalho para achar mais rapidamente uma palavra, etc
+
+cd + nome da pasta que quer trabalhar =
+Entrará no diretório (main)
+Ex: Abri o Git Bash na pasta DIO e dentro do Git, usei o comando 
+cd dio-desafio-github/ (pode se usar o tab para acelerar, como atalho)
+
+cd .. = voltar ao diretorio anterior
+
+git remote add origin + link = adicionar o link do github a qual vc quer linkar
+
+git add . ou git add * = (com asterisco é pra enviar tudo)
+Após as alterações em algum arquivo/pasta é preciso utilizar 
+esse comando pra preparar as alterações para serem comitadas
+Adicionar todos os arquivos para estarem prontos para versionar.
+Atualizar o servidor de que os documentos foram alterados.
+
+-m ".." = quando quer escrever algum comentario
+
+git commit = para incluir os arquivos, para sicronizar com  github também.
+atualizão dos arquivos da sua máquina/servidor (git) com o remoto (github)
+
+-m = para se escrever uma mensagem, entre ".."
+
+git push origin main = "empurrar" essas atualizações, arquivos que já foram commitados
+para o servidor remoto (git hub)
+
+git pull origin main = tentar puxar algum arquivo modificado do servodor remoto
+Para tentar mesclar os arquivos automaticamente
+
+merge (merge conflit) = quando acontece algum conflito entre as informações
+que você tem que resolver.
+
